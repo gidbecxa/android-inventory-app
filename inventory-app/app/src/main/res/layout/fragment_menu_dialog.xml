@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin"
+    tools:context=".MenuDialogFragment"
+    android:background="@drawable/modal_background">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:id="@+id/item_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Gucci Sneakers"
+        android:gravity="start|center_vertical"
+        android:textSize="18sp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:id="@+id/item_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$999,999"
+        android:gravity="end|center_vertical"
+        android:textSize="18sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modal_copy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        android:text="@string/make_copy"
+        android:layout_marginTop="@dimen/margin"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modal_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modal_copy"
+        android:text="@string/delete"
+        android:layout_marginTop="@dimen/margin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
